@@ -135,7 +135,9 @@ function Login() {
               value={formik.values.password}
             />
           </div>
-          <Button type="submit">Login</Button>
+          <Button type="submit">
+            {formik.isSubmitting ? "Logging In..." : "Login"}
+          </Button>
         </form>
         <p>
           Login as{" "}
